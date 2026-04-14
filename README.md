@@ -37,18 +37,18 @@ npm run build
 - **Operators & editors:** [`docs/MANUAL.md`](docs/MANUAL.md)
 - **Step-by-step editing:** [`docs/TUTORIAL.md`](docs/TUTORIAL.md)
 
-## Deploying (e.g. Vercel)
+## Deploying (Vercel)
 
-This repo may contain multiple apps. Set the Vercel project **Root Directory** to:
+**Standalone repo (`claude-productivity`):** import the GitHub repo with **Root Directory `/`**. See **[`DEPLOY.md`](DEPLOY.md)** for dashboard and CLI steps. Defaults use `henrynkoh/claude-productivity` for GitHub links in the UI.
 
-`greater-seattle-agent-skills-week`
+**Monorepo checkout:** if this folder lives inside another repo, set Vercel **Root Directory** to `greater-seattle-agent-skills-week` and override URLs with env vars below.
 
 ### Optional env vars
 
 | Variable | Purpose |
 | --- | --- |
-| `NEXT_PUBLIC_GITHUB_REPO_URL` | Root repo URL for footer and file links (default: this monorepo on GitHub). |
-| `NEXT_PUBLIC_GITHUB_CURRICULUM_TREE_URL` | Folder URL for the bottom-right GitHub button and the marketing folder link. |
+| `NEXT_PUBLIC_GITHUB_REPO_URL` | Root repo URL for footer and file links (default: `https://github.com/henrynkoh/claude-productivity`). |
+| `NEXT_PUBLIC_GITHUB_CURRICULUM_TREE_URL` | Tree URL for the GitHub FAB and marketing folder link (default: `.../tree/main`). |
 
 ### Landing page
 
